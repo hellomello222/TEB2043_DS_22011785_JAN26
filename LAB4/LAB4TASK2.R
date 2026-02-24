@@ -1,0 +1,23 @@
+V1 = c(2,3,1,5,4,6,8,7,9)
+
+# Create Matrix-1 (3x3)
+Matrix1 <- matrix(V1, nrow = 3, ncol = 3, byrow = TRUE)
+
+# Transpose to create Matrix-2
+Matrix2 <- t(Matrix1)
+
+# Rename rows and columns
+rownames(Matrix1) <- c("R1","R2","R3")
+colnames(Matrix1) <- c("C1","C2","C3")
+
+rownames(Matrix2) <- c("R1","R2","R3")
+colnames(Matrix2) <- c("C1","C2","C3")
+
+Matrix1
+Matrix2
+
+# Matrix operations
+Matrix1 + Matrix2
+Matrix1 - Matrix2
+Matrix1 * Matrix2   # element-wise multiply
+Matrix1 / Matrix2   # element-wise divide
